@@ -71,18 +71,18 @@ module "eventbridge" {
             key             = "body-parameter-key"
             value           = "body-parameter-value"
             is_value_secret = false
-            }, {
+          }, {
             key             = "body-secret-key"
             value           = "body-secret-value"
             is_value_secret = true
-            }
+          }
           ]
 
           header = [{
             key             = "header-parameter-key1"
             value           = "header-parameter-value1"
             is_value_secret = false
-            }, {
+          }, {
             key   = "header-parameter-key2"
             value = "header-parameter-value2"
           }]
@@ -91,7 +91,7 @@ module "eventbridge" {
             key             = "query-string-parameter-key1"
             value           = "query-string-parameter-value1"
             is_value_secret = false
-            }, {
+          }, {
             key   = "query-string-parameter-key2"
             value = "query-string-parameter-value2"
           }]
@@ -121,7 +121,7 @@ module "eventbridge" {
             header = [{
               key   = "header-parameter-key1"
               value = "header-parameter-value1"
-              }, {
+            }, {
               key             = "header-parameter-key2"
               value           = "header-parameter-value2"
               is_value_secret = true
