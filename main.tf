@@ -170,7 +170,7 @@ resource "aws_cloudwatch_log_delivery_destination" "firehose" {
     var.create_bus &&
     var.bus_log_config != null &&
     var.bus_log_config.firehose != null &&
-    var.bus_log_config.firehose.enabled ? 1 : 0
+    var.bus_log_config.firehose.enabled
   ) ? 1 : 0
 
   name = "EventsDeliveryDestination-${var.bus_name}-Firehose"
